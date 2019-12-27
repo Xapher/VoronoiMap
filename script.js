@@ -1,3 +1,3 @@
 function load() {
-  console.loag("Load");
+  console.log("Load");
 }
