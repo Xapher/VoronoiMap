@@ -4,4 +4,7 @@ function load() {
   var ctx = canvas.getContext('2d');
   var myImageData = ctx.createImageData(400, 400);
   
+  ctx.fillStyle = "rgba("+125+","+250+","+25+","+(255/255)+")";
+  ctx.fillRect( x, y, 1, 1 );
+  
 }
