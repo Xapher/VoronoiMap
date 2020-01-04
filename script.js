@@ -5,8 +5,11 @@ function load() {
   var ctx = canvas.getContext('2d');
   
   data = ctx.createImageData(100, 100);
-  data[0] = 0;
-  data[1] = 0;
-  data[2] = 0;
-  data[3] = 255;
+  var i;
+for (i = 0; i < data.data.length; i += 4) {
+  data.data[i+0] = 25;
+  data.data[i+1] = 0;
+  data.data[i+2] = 0;
+  data.data[i+3] = 255;
+}
 }
