@@ -2,7 +2,6 @@ function load() {
   console.log("Load");
   var canvas = document.getElementById('voronoi');
   var ctx = canvas.getContext('2d');
-  ctx.fillStyle = "rgba(125,250,25,255)";
-  ctx.fillRect( 200, 200, 1, 1 );
-  
+  var data = ctx.getImageData((0, 0, canvas.width, canvas.height);
+  data[0] = 255;
 }
