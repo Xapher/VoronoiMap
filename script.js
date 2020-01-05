@@ -1,17 +1,21 @@
 var data;
-var x = 235,y = 312;
+var cx = 235, cy = 312;
 function load() {
+  
   console.log("Load");
   var canvas = document.getElementById('voronoi');
   var ctx = canvas.getContext('2d');
   
   data = ctx.createImageData(100, 100);
   var i;
-for (i = 0; i < data.data.length; i += 4) {
-  data.data[i+0] = 25;
-  data.data[i+1] = 0;
-  data.data[i+2] = 0;
-  data.data[i+3] = 255;
-}
+  for(var x = 0; x < 100; x++) {
+      for(var y = 0; y < 100; y++) {
+          console.log(distance(cx, x, cy, y)); 
+      }
+  }
   ctx.putImageData(data, 0, 0);
+}
+
+function distance(x1,x2,y1,y2) {
+  return Math.sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1))); 
 }
