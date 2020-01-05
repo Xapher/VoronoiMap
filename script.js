@@ -12,4 +12,5 @@ for (i = 0; i < data.data.length; i += 4) {
   data.data[i+2] = 0;
   data.data[i+3] = 255;
 }
+  ctx.putImageData(imgData, 10, 10);
 }
