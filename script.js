@@ -13,7 +13,7 @@ function load() {
           distances = dinstances + distance(cx, x, cy, y) + "/r/n"; 
       }
   }
-  
+  document.getElementById('filler').innerHtml = distances + dend;
   ctx.putImageData(data, 0, 0);
 }
 var distances = "<p>";
