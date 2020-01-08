@@ -17,7 +17,7 @@ function load() {
   ctx.putImageData(data, 0, 0);
 }
 var distances = "<p>";
-var dend = "</p>;
+var dend = "</p>";
 function distance(x1,x2,y1,y2) {
   return Math.sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1))); 
 }
