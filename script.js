@@ -1,5 +1,7 @@
 var data;
 var cx = 235, cy = 312;
+var distances = "<p>";
+var dend = "</p>";
 function load() {
   
   console.log("Load");
@@ -16,8 +18,7 @@ function load() {
   document.getElementById('filler').innerHtml = distances + dend;
   ctx.putImageData(data, 0, 0);
 }
-var distances = "<p>";
-var dend = "</p>";
+
 function distance(x1,x2,y1,y2) {
   return Math.sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1))); 
 }
