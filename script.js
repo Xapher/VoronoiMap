@@ -15,7 +15,7 @@ function load() {
           distances = distances + distance(cx, x, cy, y).toString() + "/r/n"; 
       }
   }
-  document.getElementById('filler').innerHtml = distances + dend;
+  document.getElementById('filler').innerHTML = distances + dend;
   ctx.putImageData(data, 0, 0);
 }
 
