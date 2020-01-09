@@ -12,7 +12,7 @@ function load() {
   var i;
   for(var x = 0; x < 10; x++) {
       for(var y = 0; y < 10; y++) {
-          distances = distances + distance(cx, x, cy, y).toString() + '/r/n'; 
+          distances = distances + distance(cx, x, cy, y).toString() + '\n'; 
       }
   }
   document.getElementById('filler').innerHTML = distances + dend;
