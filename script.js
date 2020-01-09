@@ -10,8 +10,8 @@ function load() {
   
   data = ctx.createImageData(100, 100);
   var i;
-  for(var x = 0; x < 100; x++) {
-      for(var y = 0; y < 100; y++) {
+  for(var x = 0; x < 10; x++) {
+      for(var y = 0; y < 10; y++) {
           distances = distances + distance(cx, x, cy, y).toString() + "/r/n"; 
       }
   }
