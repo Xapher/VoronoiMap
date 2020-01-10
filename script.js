@@ -32,7 +32,7 @@ function load() {
   for(var x = 0; x < 100; x++) {
       for(var y = 0; y < 100; y++) {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
-          data.data[count * 4] = (255 * (distance(cx, x, cy, y) / max));
+          data.data[count * 4] = (255 * (1 - (distance(cx, x, cy, y) / max)));
           data.data[(count * 4) + 1] = data.data[count * 4];
           data.data[(count * 4) + 2] = data.data[count * 4];
           data.data[(count * 4) + 3] = 255;
