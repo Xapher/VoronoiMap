@@ -1,5 +1,6 @@
 var data;
 var cx = Math.random() * 100, cy = Math.random() * 100;
+var c2x = Math.random() * 100, c2y = Math.random() * 100;
 var distances = "<p>";
 var dend = "</p>";
 var floats = new Array(100 * 100);
