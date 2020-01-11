@@ -13,7 +13,7 @@ function load() {
   var ctx = canvas.getContext('2d');
   data = ctx.createImageData(100, 100);
   var i;
-  var m = distance(1,1,100,100);
+  var m = distance(0,100,0,100);
   var count = 0;
   var tD = 0;
   for(var x = 0; x < 100; x++) {
