@@ -20,7 +20,7 @@ function load() {
       for(var y = 0; y < 100; y++) {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
           dA = distance(cx, x, cy, y);
-          dB = distance(c2X, x, c2y, y);
+          dB = distance(c2x, x, c2y, y);
           if(dA < dB) {
             tD = distance(cx, x, cy, y);
           }
