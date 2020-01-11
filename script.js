@@ -5,7 +5,7 @@ var distances = "<p>";
 var dend = "</p>";
 var floats = new Array(100 * 100);
 var max = 0;
-var dA, dB;
+var dA = 0, dB = 0;
 function load() {
   
   console.log("Load");
@@ -15,7 +15,7 @@ function load() {
   var i;
   var m = distance(cx,0,100,100);
   var count = 0;
-  var tD;
+  var tD = 0;
   for(var x = 0; x < 100; x++) {
       for(var y = 0; y < 100; y++) {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
