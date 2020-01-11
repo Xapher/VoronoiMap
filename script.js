@@ -22,10 +22,10 @@ function load() {
           dA = distance(cx, x, cy, y);
           dB = distance(c2x, x, c2y, y);
           if(dA < dB) {
-            tD = distance(cx, x, cy, y);
+            tD = -distance(cx, x, cy, y);
           }
           else {
-            tD = distance(c2x, x, c2y, y);        
+            tD = -distance(c2x, x, c2y, y);        
           }
           data.data[count * 4] = (255 * (1 - (tD / max)));
           data.data[(count * 4) + 1] = data.data[count * 4];
