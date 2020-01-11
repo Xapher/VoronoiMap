@@ -15,7 +15,7 @@ function load() {
   var i;
   var m = distance(0,100,0,100);
   var count = 0;
-  var tD = 0;
+  var tD = 100;
   for(var x = 0; x < 100; x++) {
       for(var y = 0; y < 100; y++) {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
