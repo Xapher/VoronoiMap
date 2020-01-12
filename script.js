@@ -34,7 +34,7 @@ function load() {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
           for(var i = 0; i < points * points; i++) {
              if(distance(offX[i], x, offY[i], y) < tD){
-               tD =  distance(offX[i], x, offY[i], y);
+               tD =  distance(iX[i], x, iY[i], y);
              }
           }
           data.data[count * 4] = (255 * (1 - (tD / m)));
