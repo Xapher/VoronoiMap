@@ -33,7 +33,7 @@ function load() {
       for(var y = 0; y < 100; y++) {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
           for(var i = 0; i < points * points; i++) {
-             if(distance(offX[i], x, offY[i], y) < tD){
+             if(distance(iX[i], x, iY[i], y) < tD){
                tD =  distance(iX[i], x, iY[i], y);
              }
           }
