@@ -26,6 +26,7 @@ function load() {
       var offY = ((y * off) + ((Math.random() * 10) + ((off/2))));
       iX[index] = offX;
       iY[index] = offX;
+      index = index + 1;
     }
   }
   
