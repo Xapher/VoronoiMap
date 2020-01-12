@@ -5,18 +5,19 @@ var distances = "<p>";
 var dend = "</p>";
 var max = 0;
 var dA = 0, dB = 0;
+var width = 400;
 function load() {
   iX = new Array(points * points);
   iY = new Array(points * points);
   console.log("Load");
   var canvas = document.getElementById('voronoi');
   var ctx = canvas.getContext('2d');
-  data = ctx.createImageData(100, 100);
+  data = ctx.createImageData(width, width);
   var i;
-  var m = distance(0,100,0,100) / points;
+  var m = distance(0,width,0,width) / points;
   var count = 0;
-  var tD = 100;
-  var off = 100 / points;
+  var tD = width;
+  var off = width / points;
   var index = 0;
   for(var x = 0; x < points; x++) {
     for(var y = 0; y < points; y++) {
@@ -29,8 +30,8 @@ function load() {
   }
   
   
-  for(var x = 0; x < 100; x++) {
-      for(var y = 0; y < 100; y++) {
+  for(var x = 0; x < width; x++) {
+      for(var y = 0; y < width; y++) {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
           for(var i = 0; i < points * points; i++) {
              if(distance(iX[i], x, iY[i], y) < tD){
@@ -41,7 +42,7 @@ function load() {
           data.data[(count * 4) + 1] = data.data[count * 4];
           data.data[(count * 4) + 2] = data.data[count * 4];
           data.data[(count * 4) + 3] = 255;
-          tD = 100;
+          tD = width;
           count = count + 1;
       }
   }
