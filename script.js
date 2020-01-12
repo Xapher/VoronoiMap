@@ -23,7 +23,7 @@ function load() {
   for(var x = 0; x < points; x++) {
     for(var y = 0; y < points; y++) {
       var offX = ((x * off) + ((Math.random() * 10) + ((off/2))));
-      var offY = ((x * off) + ((Math.random() * 10) + ((off/2))));
+      var offY = ((y * off) + ((Math.random() * 10) + ((off/2))));
       iX[index] = offX;
       iY[index] = offX;
     }
