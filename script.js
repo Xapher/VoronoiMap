@@ -1,6 +1,4 @@
 var data;
-var cx = Math.random() * 100, cy = Math.random() * 100;
-var c2x = Math.random() * 100, c2y = Math.random() * 100;
 var points = 10;
 var iX, iY;
 var distances = "<p>";
@@ -25,7 +23,7 @@ function load() {
       var offX = ((x * off) + ((Math.random() * 10) + ((off/2))));
       var offY = ((y * off) + ((Math.random() * 10) + ((off/2))));
       iX[index] = offX;
-      iY[index] = offX;
+      iY[index] = offY;
       index = index + 1;
     }
   }
