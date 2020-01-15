@@ -12,6 +12,8 @@ function load() {
   iY = new Array(points * points);
   console.log("Load");
   var canvas = document.getElementById('voronoi');
+  canvas.width = width;
+  canvas.height = width;
   var ctx = canvas.getContext('2d');
   data = ctx.createImageData(width, width);
   Math.seed = 321624561520546 * Math.random();
