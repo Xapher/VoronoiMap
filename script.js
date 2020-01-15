@@ -6,7 +6,7 @@ var dend = "</p>";
 var max = 0;
 var dA = 0, dB = 0;
 var count = 0;
-var width = 400;
+var width = 1200;
 function load() {
   iX = new Array(points * points);
   iY = new Array(points * points);
