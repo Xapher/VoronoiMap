@@ -19,7 +19,7 @@ function load() {
     distances = distances + r + "\n";
     var offset = getRandomSeeded(0,151651656516516156165);
         for(var y = 0; y < width; y++) {
-            data.data[count * 4] = (255 * (1 * ((Math.sin(y + offset) / 100) / 2) + 0.5)));
+            data.data[count * 4] = (255 * (1 * (((Math.sin(y + offset) / 100) / 2) + 0.5)));
             data.data[(count * 4) + 1] = data.data[count * 4];
             data.data[(count * 4) + 2] = data.data[count * 4];
             data.data[(count * 4) + 3] = 255;
