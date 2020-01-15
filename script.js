@@ -18,7 +18,6 @@ function load() {
   data = ctx.createImageData(width, width);
   Math.seed = 321624561520546 * Math.random();
   bubbleMap();
-  document.getElementById("filler").innerHTML = distances + dend;
   ctx.putImageData(data, 0, 0);
 }
 
