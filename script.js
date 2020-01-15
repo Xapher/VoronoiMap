@@ -14,12 +14,12 @@ function load() {
   var canvas = document.getElementById('voronoi');
   var ctx = canvas.getContext('2d');
   data = ctx.createImageData(width, width);
+  Math.seed = getRandomSeeded(0,1, getRandomSeeded(0,265484798412198, 3216541968453149816516 * Math.random()) * x);
   for(var x = 0; x < width; x++) {
-    var r = getRandomSeeded(0,1, getRandomSeeded(0,265484798412198, 3216541968453149816516 * Math.random()) * x);
     distances = distances + r + "\n";
-    var offset = width * r;
+    var offset = getRandomSeeded(0,151651656516516156165);
         for(var y = 0; y < width; y++) {
-            data.data[count * 4] = (255 * (1 * ((Math.sin((( y / 100) + offset) / 100) / 2) + 0.5)));
+            data.data[count * 4] = (255 * (1 * ((Math.sin(y + offset) / 100) / 2) + 0.5)));
             data.data[(count * 4) + 1] = data.data[count * 4];
             data.data[(count * 4) + 2] = data.data[count * 4];
             data.data[(count * 4) + 3] = 255;
