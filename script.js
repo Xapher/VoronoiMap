@@ -53,10 +53,13 @@ function bubbleMap() {
           }
           sum = tD + sD;
           sum = sum / 2;
-          data.data[count * 4] = (255 * (1 - (tD / sum)));
-          data.data[(count * 4) + 1] = data.data[count * 4];
-          data.data[(count * 4) + 2] = data.data[count * 4];
-          data.data[(count * 4) + 3] = 255;
+          var c = (255 * (1 - (tD / sum)));
+          if(c == 0.5) {
+            data.data[count * 4] = c;
+            data.data[(count * 4) + 1] = c;
+            data.data[(count * 4) + 2] = c;
+            data.data[(count * 4) + 3] = 255;
+          }
           tD = width;
           sD = width;
           count = count + 1;
