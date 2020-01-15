@@ -15,7 +15,7 @@ function load() {
   var ctx = canvas.getContext('2d');
   data = ctx.createImageData(width, width);
   for(var x = 0; x < width; x++) {
-    var r = getRandomSeeded(0,1, getRandomSeeded(0,Math.max, width * Math.random()) * x);
+    var r = getRandomSeeded(0,1, getRandomSeeded(0,265484798412198, 3216541968453149816516 * Math.random()) * x);
     distances = distances + r + "\n";
     var offset = width * r;
         for(var y = 0; y < width; y++) {
