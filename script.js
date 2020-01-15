@@ -16,6 +16,7 @@ function load() {
   data = ctx.createImageData(width, width);
   for(var x = 0; x < width; x++) {
     var r = getRandomSeeded(0,1,x);
+    distances = distances + r + "\n";
     var offset = 100 * r;
         for(var y = 0; y < width; y++) {
             data.data[count * 4] = (255 * (1 * ((Math.sin(y + offset) / 2) + 0.5)));
@@ -27,6 +28,7 @@ function load() {
         }
     }
   //bubbleMap();
+  document.getElementById("filler").innerHTML = distances + dend;
   ctx.putImageData(data, 0, 0);
 }
 
