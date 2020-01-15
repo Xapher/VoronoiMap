@@ -14,9 +14,8 @@ function load() {
   var canvas = document.getElementById('voronoi');
   var ctx = canvas.getContext('2d');
   data = ctx.createImageData(width, width);
-  var r = getRandomSeeded(0,1, 2165);
   for(var x = 0; x < width; x++) {
-    
+    var r = getRandomSeeded(0,1, 2165 * x);
     distances = distances + r + "\n";
     var offset = 100 * r;
         for(var y = 0; y < width; y++) {
