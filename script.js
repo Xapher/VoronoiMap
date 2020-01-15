@@ -5,6 +5,7 @@ var distances = "<p>";
 var dend = "</p>";
 var max = 0;
 var dA = 0, dB = 0;
+var count = 0;
 var width = 400;
 function load() {
   iX = new Array(points * points);
@@ -29,7 +30,6 @@ function load() {
 
 function bubbleMap() {
   var m = distance(0,width,0,width) / points;
-  var count = 0;
   var tD = width;
   var off = width / points;
   var index = 0;
