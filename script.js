@@ -64,3 +64,15 @@ function bubbleMap() {
 function distance(x1,x2,y1,y2) {
   return Math.sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1))); 
 }
+
+
+function getRandomSeeded(min,max) {
+    Math.seed = 6;
+    max = max || 1;
+    min = min || 0;
+ 
+    Math.seed = (Math.seed * 9301 + 49297) % 233280;
+    var rnd = Math.seed / 233280;
+ 
+    return min + rnd * (max - min);
+}
