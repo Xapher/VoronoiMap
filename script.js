@@ -16,7 +16,6 @@ function load() {
   data = ctx.createImageData(width, width);
   Math.seed = getRandomSeeded(0,1, getRandomSeeded(0,265484798412198, 3216541968453149816516 * Math.random()) * x);
   for(var x = 0; x < width; x++) {
-    distances = distances + r + "\n";
     var offset = getRandomSeeded(0,151651656516516156165);
         for(var y = 0; y < width; y++) {
             data.data[count * 4] = (255 * (1 * (((Math.sin(y + offset) / 100) / 2) + 0.5)));
