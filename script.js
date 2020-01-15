@@ -14,7 +14,7 @@ function load() {
   var canvas = document.getElementById('voronoi');
   var ctx = canvas.getContext('2d');
   data = ctx.createImageData(width, width);
-  Math.seed = getRandomSeeded(0,1, getRandomSeeded(0,265484798412198, 3216541968453149816516 * Math.random()) * x);
+  Math.seed = getRandomSeeded(0,1, getRandomSeeded(0,265484798412198, 3216541968453149816516 * Math.random()));
   for(var x = 0; x < width; x++) {
     var offset = getRandomSeeded(0,151651656516516156165);
         for(var y = 0; y < width; y++) {
