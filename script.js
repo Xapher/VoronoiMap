@@ -15,9 +15,9 @@ function load() {
   var ctx = canvas.getContext('2d');
   data = ctx.createImageData(width, width);
   for(var x = 0; x < width; x++) {
-    var r = getRandomSeeded(0,100, 2165 * x);
+    var r = getRandomSeeded(0,width, getRandomSeeded(0,width, width * Math.random()) * x);
     distances = distances + r + "\n";
-    var offset = 100 * r;
+    var offset = width * r;
         for(var y = 0; y < width; y++) {
             data.data[count * 4] = (255 * (1 * ((Math.sin(y + offset) / 2) + 0.5)));
             data.data[(count * 4) + 1] = data.data[count * 4];
