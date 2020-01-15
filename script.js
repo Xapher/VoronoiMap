@@ -13,12 +13,27 @@ function load() {
   var canvas = document.getElementById('voronoi');
   var ctx = canvas.getContext('2d');
   data = ctx.createImageData(width, width);
-  var i;
+  for(var x = 0; x < width; x++) {
+        for(var y = 0; y < width; y++) {
+            data.data[count * 4] = (255 * (1 * Math.sin(y)));
+            data.data[(count * 4) + 1] = data.data[count * 4];
+            data.data[(count * 4) + 2] = data.data[count * 4];
+            data.data[(count * 4) + 3] = 255;
+            tD = width;
+            count = count + 1;
+        }
+    }
+  //bubbleMap();
+  ctx.putImageData(data, 0, 0);
+}
+
+function bubbleMap() {
   var m = distance(0,width,0,width) / points;
   var count = 0;
   var tD = width;
   var off = width / points;
   var index = 0;
+  var i;
   for(var x = 0; x < points; x++) {
     for(var y = 0; y < points; y++) {
       var offX = ((x * off) + (Math.random() * (off / 2)));
@@ -28,8 +43,6 @@ function load() {
       index = index + 1;
     }
   }
-  
-  
   for(var x = 0; x < width; x++) {
       for(var y = 0; y < width; y++) {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
@@ -46,8 +59,6 @@ function load() {
           count = count + 1;
       }
   }
-  document.getElementById('filler').innerHTML = m;
-  ctx.putImageData(data, 0, 0);
 }
 
 function distance(x1,x2,y1,y2) {
