@@ -16,7 +16,7 @@ function load() {
   data = ctx.createImageData(width, width);
   for(var x = 0; x < width; x++) {
         for(var y = 0; y < width; y++) {
-            data.data[count * 4] = (255 * (1 * ((Math.sin(y) / 2) + 1)));
+            data.data[count * 4] = (255 * (1 * ((Math.sin(y) / 2) + 0.5)));
             data.data[(count * 4) + 1] = data.data[count * 4];
             data.data[(count * 4) + 2] = data.data[count * 4];
             data.data[(count * 4) + 3] = 255;
