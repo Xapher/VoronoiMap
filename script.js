@@ -16,7 +16,7 @@ function load() {
   data = ctx.createImageData(width, width);
   for(var x = 0; x < width; x++) {
     var r = getRandomSeeded(0,1,x);
-    var offset = 10 * r;
+    var offset = 100 * r;
         for(var y = 0; y < width; y++) {
             data.data[count * 4] = (255 * (1 * ((Math.sin(y + offset) / 2) + 0.5)));
             data.data[(count * 4) + 1] = data.data[count * 4];
