@@ -8,8 +8,8 @@ var dA = 0, dB = 0;
 var count = 0;
 var width = 1200;
 function load() {
-  iX = new Array(points * points);
-  iY = new Array(points * points);
+  iX = new Array((points * points) * 9);
+  iY = new Array((points * points) * 9);
   console.log("Load");
   var canvas = document.getElementById('voronoi');
   canvas.width = width;
@@ -33,8 +33,56 @@ function bubbleMap() {
     for(var y = 0; y < points; y++) {
       var offX = ((x * off) + ((Math.random() * (off / 2)) + (Math.random() * -(off / 2))));
       var offY = ((y * off) + ((Math.random() * (off / 2)) + (Math.random() * -(off / 2))));
+      var vx = offX + 0;
+      var vy = offY = 0;
       iX[index] = offX;
       iY[index] = offY;
+      vx = offX - points;
+      vy = offY - points;
+      index = index + 1;
+      
+      iX[index] = vx;
+      iY[index] = vy;
+      vx = offX - points;
+      vy = offY;
+      index = index + 1;
+      
+      
+      iX[index] = offX;
+      iY[index] = offY;
+      vx = offX - points;
+      vy = offY + points;
+      index = index + 1;
+      
+      iX[index] = offX;
+      iY[index] = offY;
+      vx = offX;
+      vy = offY + points;
+      index = index + 1;
+      
+      iX[index] = offX;
+      iY[index] = offY;
+      vx = offX + points;
+      vy = offY + points;
+      index = index + 1;
+      
+      
+      iX[index] = offX;
+      iY[index] = offY;
+      vx = offX + points;
+      vy = offY;
+      index = index + 1;
+      
+      iX[index] = offX;
+      iY[index] = offY;
+      vx = offX + points;
+      vy = offY - points;
+      index = index + 1;
+      
+      iX[index] = offX;
+      iY[index] = offY;
+      vx = offX;
+      vy = offY - points;
       index = index + 1;
     }
   }
