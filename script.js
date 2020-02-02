@@ -37,8 +37,8 @@ function bubbleMap() {
       var vy = offY + 0;
       iX[index] = offX;
       iY[index] = offY;
-      vx = offX - points;
-      vy = offY - points;
+      vx = offX - width;
+      vy = offY - width;
       index = index + 1;
       
       iX[index] = vx;
