@@ -34,7 +34,7 @@ function bubbleMap() {
       var offX = ((x * off) + ((Math.random() * (off / 2)) + (Math.random() * -(off / 2))));
       var offY = ((y * off) + ((Math.random() * (off / 2)) + (Math.random() * -(off / 2))));
       var vx = offX + 0;
-      var vy = offY = 0;
+      var vy = offY + 0;
       iX[index] = offX;
       iY[index] = offY;
       vx = offX - points;
