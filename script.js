@@ -43,46 +43,46 @@ function bubbleMap() {
       
       iX[index] = vx;
       iY[index] = vy;
-      vx = offX - points;
+      vx = offX - width;
       vy = offY;
       index = index + 1;
       
       
-      iX[index] = offX;
-      iY[index] = offY;
-      vx = offX - points;
-      vy = offY + points;
+      iX[index] = vx;
+      iY[index] = vy;
+      vx = offX - width;
+      vy = offY + width;
       index = index + 1;
       
-      iX[index] = offX;
-      iY[index] = offY;
+      iX[index] = vx;
+      iY[index] = vy;
       vx = offX;
-      vy = offY + points;
+      vy = offY + width;
       index = index + 1;
       
-      iX[index] = offX;
-      iY[index] = offY;
-      vx = offX + points;
-      vy = offY + points;
+      iX[index] = vx;
+      iY[index] = vy;
+      vx = offX + width;
+      vy = offY + width;
       index = index + 1;
       
       
-      iX[index] = offX;
-      iY[index] = offY;
-      vx = offX + points;
+      iX[index] = vx;
+      iY[index] = vy;
+      vx = offX + width;
       vy = offY;
       index = index + 1;
       
-      iX[index] = offX;
-      iY[index] = offY;
-      vx = offX + points;
-      vy = offY - points;
+      iX[index] = vx;
+      iY[index] = vy;
+      vx = offX + width;
+      vy = offY - width;
       index = index + 1;
       
-      iX[index] = offX;
-      iY[index] = offY;
+      iX[index] = vx;
+      iY[index] = vy;
       vx = offX;
-      vy = offY - points;
+      vy = offY - width;
       index = index + 1;
     }
   }
