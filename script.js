@@ -89,12 +89,12 @@ function bubbleMap() {
   for(var x = 0; x < width; x++) {
       for(var y = 0; y < width; y++) {
           //distances = distances + distance(cx, x, cy, y).toString() + '\n';
-          for(var i = 0; i < (points * points) * 9; i+=9) {
+          for(var i = 0; i < (points * points) * 9; i++) {
              if(distance(iX[i], x, iY[i], y) < tD){
                tD =  distance(iX[i], x, iY[i], y);
              }
           }
-          for(var i = 0; i < (points * points) * 9 ; i+=9) {
+          for(var i = 0; i < (points * points) * 9 ; i++) {
              if(distance(iX[i], x, iY[i], y) < sD && distance(iX[i], x, iY[i], y) > tD){
                sD =  distance(iX[i], x, iY[i], y);
              }
