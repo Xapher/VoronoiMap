@@ -102,9 +102,6 @@ function bubbleMap() {
           sum = tD + sD;
           sum = sum / 2;
           var c = (255 * (1 - (tD / sum)));
-          if(c <= 255 / 8) {
-            c = 0;
-          }
           data.data[count * 4] = c;
           data.data[(count * 4) + 1] = c;
           data.data[(count * 4) + 2] = c;
