@@ -8,7 +8,6 @@ var dA = 0, dB = 0;
 var count = 0;
 var width = 1200;
 
-window.onload = load();
 
 function load() {
   iX = new Array((points * points) * 9);
