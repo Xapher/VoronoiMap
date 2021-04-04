@@ -1,5 +1,5 @@
 var data;
-var points = 10;
+var points = 100;
 var iX, iY;
 var distances = "<p>";
 var dend = "</p>";
